@@ -4,7 +4,7 @@ It now supports buy/sell markers, allowing users to visually track trading actio
 ## Preview
 |Marker	|
 |:------------:|
-|	[![](https://github.com/r-mzy47/candlesticks/blob/develop/example_ios.gif)](https://github.com/r-mzy47/candlesticks/blob/master/example/lib/main.dart)  | 
+|	[![](https://github.com/so230/candlesticks/blob/60feaa46b80ff8c10c55b473d742fd23dc5f90e5/maker.png)](https://github.com/so230/candlesticks/blob/60feaa46b80ff8c10c55b473d742fd23dc5f90e5/maker.png)  | 
 
 # candlesticks
 
