@@ -1,5 +1,21 @@
 This project is a customized fork of Candlesticks v2.1, enhanced with new functionality.
 It now supports buy/sell markers, allowing users to visually track trading actions on the chart.
+### 🆕 Feature: Buy/Sell Markers
+
+You can now add visual markers to candles to indicate buy/sell signals.
+
+#### How to use:
+In the `Candle` class, two new boolean flags are available:
+- `showRedMarker`: shows a red marker (e.g. for sell)
+- `showBlueMarker`: shows a blue marker (e.g. for buy)
+
+Example:
+```dart
+Candle(
+  ...,
+  showRedMarker: true,
+  showBlueMarker: false,
+);
 
 ## Preview
 |Marker	|
