@@ -1,3 +1,8 @@
+## fored [2.1.1] - Aug 1, 2025
+
+- [Feature] Buy/Sell Markers
+
+
 ## [2.1.0] - Feb 22, 2022
 
 - document correction
