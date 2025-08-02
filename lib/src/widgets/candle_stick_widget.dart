@@ -136,6 +136,33 @@ class CandleStickRenderObject extends RenderBox {
         paint..strokeWidth = _candleWidth * 0.8,
       );
     }
+  
+    // ✅ 마커 그리기
+    if (candle.showRedMarker) {
+      final double markerY = offset.dy + (_high - candle.high) / range - 6;
+      drawTriangleMarker(context.canvas, Offset(x, markerY - 10), Colors.red);
+    }
+
+    if (candle.showBlueMarker) {
+      final double markerY = offset.dy + (_high - candle.high) / range - 6;
+      drawTriangleMarker(context.canvas, Offset(x, markerY), Colors.blue);
+    }
+  }
+
+  // ✅ 마커 그리기
+  void drawTriangleMarker(Canvas canvas, Offset center, Color color) {
+    const double size = 6.0; // 삼각형 크기
+
+    final Path trianglePath = Path()
+      ..moveTo(center.dx, center.dy + size) // 아래 꼭짓점
+      ..lineTo(center.dx - size, center.dy - size) // 왼쪽 꼭짓점
+      ..lineTo(center.dx + size, center.dy - size) // 오른쪽 꼭짓점
+      ..close();
+
+    canvas.drawPath(
+      trianglePath,
+      Paint()..color = color,
+    );
   }
 
   @override
