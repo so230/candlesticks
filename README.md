@@ -16,7 +16,7 @@ Candle(
   showRedMarker: true,
   showBlueMarker: false,
 );
-
+```
 ## Preview
 |Marker	|
 |:------------:|
