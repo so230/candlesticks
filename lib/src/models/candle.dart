@@ -22,6 +22,10 @@ class Candle {
   /// Volume is the number of shares of a
   /// security traded during a given period of time.
   final double volume;
+  
+  // ✅ 마커 표시 여부
+  bool showRedMarker;
+  bool showBlueMarker;
 
   bool get isBull => open <= close;
 
@@ -31,7 +35,9 @@ class Candle {
     required this.low,
     required this.open,
     required this.close,
-    required this.volume,
+    required this.volume,    
+    this.showRedMarker = false,
+    this.showBlueMarker = false,
   });
 
   Candle.fromJson(List<dynamic> json)
@@ -40,5 +46,7 @@ class Candle {
         low = double.parse(json[3]),
         open = double.parse(json[1]),
         close = double.parse(json[4]),
-        volume = double.parse(json[5]);
+        volume = double.parse(json[5]),
+        showRedMarker = false,
+        showBlueMarker = false;
 }
