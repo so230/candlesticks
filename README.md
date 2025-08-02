@@ -1,3 +1,11 @@
+This project is a customized fork of Candlesticks v2.1, enhanced with new functionality.
+It now supports buy/sell markers, allowing users to visually track trading actions on the chart.
+
+## Preview
+|Marker	|
+|:------------:|
+|	[![](https://github.com/r-mzy47/candlesticks/blob/develop/example_ios.gif)](https://github.com/r-mzy47/candlesticks/blob/master/example/lib/main.dart)  | 
+
 # candlesticks
 
 [![pub package](https://img.shields.io/badge/pub-v2.1.0-orange.svg)](https://pub.dev/packages/candlesticks)
